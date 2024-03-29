@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sounny's GPTs</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+            margin-top: 60px;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#category0">GIS</a></li>
+                <li><a href="#category1">Productivity</a></li>
+                <li><a href="#category2">Education</a></li>
+                <li><a href="#category3">Fun</a></li>
+                <!-- Add more categories as needed -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       <section id="category0">
+            <h2>GIS</h2>
+            <p>GPTs useful for GIS</p>
+            <!-- Add details for each model -->
+        </section>
+        <section id="category1">
+            <h2>Productivity</h2>
+            <p>GPTs to boost your productivity and achieve better outcomes in less time</p>
+            <!-- Add details for each model -->
+        </section>
+
+        <section id="category2">
+            <h2>Education</h2>
+            <p>GPTs to help you learn</p>
+            <!-- Add details for each model -->
+        </section>
+        <section id="category3">
+            <h2>Education</h2>
+            <p>GPTs for fun</p>
+            <!-- Add details for each model -->
+        </section>
+
+        <!-- Repeat for other categories -->
+    </main>
+
+    <footer>
+        <p>© 2024 Sounny</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
