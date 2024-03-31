@@ -8,6 +8,7 @@
             margin: 0;
             padding: 0;
             scroll-behavior: smooth;
+            font-family: Arial, sans-serif;
         }
 
         header {
@@ -35,9 +36,54 @@
             text-decoration: none;
         }
 
-        section {
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 60px;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
             padding: 20px;
-            margin-top: 60px;
+            margin: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 300px;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        .card-img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .card-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .card-description {
+            font-size: 16px;
+        }
+
+        .card-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .card-link:hover {
+            background-color: #0056b3;
         }
 
         footer {
@@ -52,36 +98,38 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#category0">GIS</a></li>
-                <li><a href="#category1">Productivity</a></li>
-                <li><a href="#category2">Education</a></li>
-                <li><a href="#category3">Fun</a></li>
-                <!-- Add more categories as needed -->
+                Sounny's GPTs
             </ul>
         </nav>
     </header>
 
     <main>
-       <section id="category0">
-            <h2>GIS</h2>
-            <p>GPTs useful for GIS</p>
-            <!-- Add details for each model -->
-        </section>
-        <section id="category1">
-            <h2>Productivity</h2>
-            <p>GPTs to boost your productivity and achieve better outcomes in less time</p>
-            <!-- Add details for each model -->
+        <section id="category0" class="card">
+            <img src="https://files.oaiusercontent.com/file-8miGPyvjQTk13ezP9HvVI2Zs?se=2123-10-18T13%3A33%3A30Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3D5656a00b-c549-4c0b-8ed8-e22a394c96c6.png&sig=UOhzBYga7Pg8ZJX5kEQvHkel1JOQ1LaBlmVfXl4i5tE%3D" alt="GIS icon" class="card-img">
+            <h2 class="card-title">Monsieur Parle</h2>
+            <p class="card-description">French conversational tutor teaching in authentic French style</p>
+            <a href="https://chat.openai.com/g/g-nwM2HkY8p-monsieur-parle" class="card-link">Go to GPT</a>
         </section>
 
-        <section id="category2">
-            <h2>Education</h2>
-            <p>GPTs to help you learn</p>
-            <!-- Add details for each model -->
+        <section id="category1" class="card">
+            <img src="icon_url" alt="Productivity icon" class="card-img">
+            <h2 class="card-title">Productivity</h2>
+            <p class="card-description">GPTs to boost your productivity and achieve better outcomes in less time</p>
+            <a href="gpt_link" class="card-link">Go to GPT</a>
         </section>
-        <section id="category3">
-            <h2>Education</h2>
-            <p>GPTs for fun</p>
-            <!-- Add details for each model -->
+
+        <section id="category2" class="card">
+            <img src="icon_url" alt="Education icon" class="card-img">
+            <h2 class="card-title">Education</h2>
+            <p class="card-description">GPTs to help you learn</p>
+            <a href="gpt_link" class="card-link">Go to GPT</a>
+        </section>
+
+        <section id="category3" class="card">
+            <img src="icon_url" alt="Fun icon" class="card-img">
+            <h2 class="card-title">Fun</h2>
+            <p class="card-description">GPTs for fun</p>
+            <a href="gpt_link" class="card-link">Go to GPT</a>
         </section>
 
         <!-- Repeat for other categories -->
